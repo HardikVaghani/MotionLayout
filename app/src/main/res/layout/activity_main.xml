@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="#E45858"
     android:padding="10dp"
     app:layoutDescription="@xml/activity_main_scene"
     app:showPaths="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_name"
+    <ImageView
+        android:id="@+id/image_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
+        android:contentDescription="@string/app_name"
         android:gravity="top|center_horizontal"
-        android:text="Hardik Vaghani"
-        android:textColor="#E46A6A"
-        android:textSize="15sp"
+        android:src="@drawable/wind_mill"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
