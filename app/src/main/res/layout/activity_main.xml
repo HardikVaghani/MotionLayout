@@ -6,22 +6,142 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     android:padding="10dp"
-    app:layoutDescription="@xml/activity_main_scene"
     app:showPaths="true"
+    app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="top|center_horizontal"
-        android:text="Hardik Vaghani"
-        android:textColor="#E46A6A"
-        android:textSize="15sp"
+    <ImageView
+        android:id="@+id/icon_01"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_01_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_02"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_02_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_03"
+        app:layout_constraintStart_toEndOf="@id/icon_01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_03"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_03_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_02"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_04"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_04_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_05"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_05_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_06"
+        app:layout_constraintStart_toEndOf="@id/icon_04"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_06"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_06_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_05"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_07"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_07_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+    <ImageView
+        android:id="@+id/icon_08"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_08_foreground"
+        app:layout_constraintEnd_toStartOf="@id/icon_09"
+        app:layout_constraintStart_toEndOf="@id/icon_07"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+    <ImageView
+        android:id="@+id/icon_09"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:visibility="visible"
+        android:src="@mipmap/ic_icon_09_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon_08"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+
+    <ImageView
+        android:id="@+id/icon_file"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/app_name"
+        android:padding="10dp"
+
+        android:scaleType="center"
+        android:src="@mipmap/ic_icon_file_foreground"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/icon_07" />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
