@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    app:layoutDescription="@xml/activity_main_scene"
-    app:showPaths="true"
-    tools:context=".MainActivity">
+    app:layoutDescription="@xml/testing_layout_scene">
 
     <ImageView
         android:id="@+id/circle_1"

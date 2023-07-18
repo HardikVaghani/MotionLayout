@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="5000">
+        <KeyFrameSet>
+<!--            <KeyCycle-->
+<!--                android:alpha="0.6"-->
+<!--                android:rotation="0"-->
+<!--                motion:framePosition="50"-->
+<!--                motion:motionTarget="@+id/circle_1"-->
+<!--                motion:waveOffset="1"-->
+<!--                motion:wavePeriod="1"-->
+<!--                motion:wavePhase="1"-->
+<!--                motion:waveShape="sawtooth" />-->
+            <KeyTimeCycle
+                motion:motionTarget="@+id/circle_1"
+                motion:framePosition="0"
+                motion:wavePeriod="20"
+                motion:waveShape="sinusoidal"
+                android:scaleX="1"
+                android:scaleY="1" />
+            <KeyTimeCycle
+                motion:motionTarget="@+id/circle_1"
+                motion:framePosition="50"
+                motion:wavePeriod="20"
+                motion:waveShape="sinusoidal"
+                android:scaleX="2"
+                android:scaleY="2" />
+            <KeyTimeCycle
+                motion:motionTarget="@+id/circle_1"
+                motion:framePosition="100"
+                motion:wavePeriod="20"
+                motion:waveShape="sinusoidal"
+                android:scaleX="1"
+                android:scaleY="1" />
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/circle_1"
+                motion:percentX="0.50" />
+
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/circle_2"
+                motion:percentX="0.50" />
+            <KeyAttribute
+                android:alpha="0.5"
+                motion:framePosition="25"
+                motion:motionTarget="@+id/circle_2" />
+            <KeyAttribute
+                android:alpha="0.0"
+                motion:framePosition="50"
+                motion:motionTarget="@+id/circle_2" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/circle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/circle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/circle_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/circle_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>
