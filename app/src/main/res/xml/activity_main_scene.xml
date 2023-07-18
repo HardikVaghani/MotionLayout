@@ -5,42 +5,28 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1500">
-        <KeyFrameSet></KeyFrameSet>
-       <OnClick/>
+        motion:duration="1000">
+        <KeyFrameSet>
+
+        </KeyFrameSet>
+        <OnClick />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:id="@+id/tv_name"
-            android:layout_width="match_parent"
+            android:id="@+id/appCompatImageView"
+            android:layout_width="1000dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
-            <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customDimension="15sp" />
-        </Constraint>
+            motion:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@+id/tv_name"
-            android:layout_width="match_parent"
+            android:id="@+id/appCompatImageView"
+            android:layout_width="1000dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent">
-            <CustomAttribute
-                motion:attributeName="textSize"
-                motion:customDimension="30sp" />
-        </Constraint>
+            motion:layout_constraintTop_toTopOf="parent" />
     </ConstraintSet>
-
-
 </MotionScene>

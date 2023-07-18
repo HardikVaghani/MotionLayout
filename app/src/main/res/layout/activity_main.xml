@@ -5,23 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:padding="10dp"
     app:layoutDescription="@xml/activity_main_scene"
     app:showPaths="true"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="1000dp"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:gravity="top|center_horizontal"
-        android:text="Hardik Vaghani"
-        android:textColor="#E46A6A"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_4320x3120_1"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.motion.widget.MotionLayout>
